@@ -1,0 +1,19 @@
+.error-message{
+    color: red;
+    position: absolute;
+    margin-left: 7%;
+    margin-right: auto;
+    margin-top: 0;
+}
+
+.login{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 10%;
+}
+
+form{
+    margin-top: 15%;
+    line-height: 200%;
+    width: 100%;
+}

@@ -1,0 +1,26 @@
+{% extends "./header.html" %}
+
+{% block content %}
+
+<!--Register-->
+<div class="login container py-5">
+	<h1>Register</h1>
+	{% for message in messages %}
+	<p class="error-message">{{ message }}</p>
+	{% endfor %}
+	<form method="POST">
+		{% csrf_token %}
+		<label id="labe" for="username">Username</label>
+		<input type="text" name="username" id="" placeholder="Username"><br>
+		<label id="labe" for="email">Email</label>
+		<input type="email" name="email" id="" placeholder="Email"><br>
+		<label id="labe" for="password1">Password</label>
+		<input type="password" name="password1" id="" placeholder="Password"><br>
+		<label id="labe" for="password2">Re-Enter Password</label>
+		<input type="password" name="password2" id="" placeholder="Confirm Password"><br>
+		<button class="btn btn-primary" type="submit">Register</button>
+		<p class="text-center">If you already have an account, <a href="/login">login</a> instead.</p>
+	</form>
+</div>
+
+{% endblock %}
